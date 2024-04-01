@@ -1,0 +1,58 @@
+{
+  "name": "blog-zzc",
+  "version": "1.0.0",
+  "description": "个人博客#vuepress",
+  "main": "index.js",
+  "repository": "git@github.com:SoonerOrLater-NewBest/blog-zzc.git",
+  "author": "周振超",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "release": "vuepress build docs && cd docs/.vuepress/dist && git init &&git config --local user.name SoonerOrLater-NewBest&&git config --local user.email 1245515178@qq.com&&git add -A&&git commit -m 'deploy'&&git push -f git@github.com:SoonerOrLater-NewBest/SoonerOrLater-NewBest.github.io.git master"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "element-ui": "^2.9.1",
+    "hover.css": "^2.3.2",
+    "moment": "^2.24.0",
+    "vue-clipboard2": "^0.3.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "babel-eslint": "^10.1.0",
+    "conventional-changelog-cli": "^2.0.34",
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^7.2.0",
+    "eslint-config-alloy": "^3.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.5",
+    "node-sass": "^4.13.1",
+    "prettier": "^2.0.5",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.6.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.17.2",
+    "vue-eslint-parser": "^7.1.0",
+    "vuepress": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.6.0 <15.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

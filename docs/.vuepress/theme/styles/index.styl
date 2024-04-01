@@ -1,0 +1,21 @@
+
+.page
+  padding-left $sidebarWidth
+  padding-right $sidebarWidth
+.sidebar
+  width $sidebarWidth
+.sidebar-right
+  right 0
+  left auto
+  border-right 0 none
+  border-left 1px solid #eaecef
+@media (min-width: ($MQMobile + 1px))
+  .theme-container.no-sidebar
+    .sidebar-right
+      display block
+  .theme-container.no-sidebar-right
+    .sidebar-right
+      display none
+    .page 
+      padding-right 0
+@require 'mobile.styl'

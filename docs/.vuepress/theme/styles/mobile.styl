@@ -1,0 +1,20 @@
+$mobileSidebarWidth = $sidebarWidth * 0.82
+@media (max-width: 1440px)
+  .sidebar
+    width $mobileSidebarWidth
+  .page
+    padding-left $mobileSidebarWidth
+    padding-right $mobileSidebarWidth
+// narrow desktop / iPad
+@media (max-width: $MQNarrow)
+  .sidebar-right
+    display none!important
+  .sidebar
+    font-size 15px
+  .page
+    padding-right 0
+
+// wide mobile
+@media (max-width: $MQMobile)
+  .page
+    padding-left 0

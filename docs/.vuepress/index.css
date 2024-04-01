@@ -1,0 +1,15 @@
+/* 覆盖ele-ui全局样式 */
+.el-progress__text {
+  line-height: 1.42;
+}
+
+/* 外链自定义容器样式 */
+.href-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.href-wrap p {
+  margin: 2em 2em 0 0;
+}
