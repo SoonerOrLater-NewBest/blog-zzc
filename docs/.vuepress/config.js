@@ -181,7 +181,7 @@ module.exports = {
         {
           title: '提效工具',
           collapsable: false,
-          children: [['', 'todo']]
+          children: [['', 'Vuepress静态博客搭建']]
         }
       ],
       '/ai/': [

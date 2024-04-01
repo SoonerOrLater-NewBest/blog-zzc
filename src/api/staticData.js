@@ -15,7 +15,7 @@ export const aboutAccordion = [
                 Github</a>
                 <a href="https://segmentfault.com/u/zhouzhenchao">
                 Segmentfault</a>`,
-        backgd: 'hero.png'
+        backgd: 'qrcode.jpg'
       },
       {
         title: '我的小程序',
@@ -23,7 +23,8 @@ export const aboutAccordion = [
         content: `<div>欢迎大家扫描右方二维码使用
         <div style="font-size: 12px;color: #999;">主要制作一些便民小工具或服务，解压小游戏，开发中......<div/>
         <div/>`,
-        show: false
+        show: false,
+        backgd: 'hero.png'
       }
     ],
     show: true

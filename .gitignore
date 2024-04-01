@@ -23,3 +23,5 @@ selenium-debug.log
 # yarn.lock
 
 docs/.vuepress/dist
+# 如果本机python版本的2.x可以不要这个文件，我是因为多版本，所以需要指定，不然node-sass构建报错
+# .python-version 
