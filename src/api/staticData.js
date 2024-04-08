@@ -24,7 +24,7 @@ export const aboutAccordion = [
         <div style="font-size: 12px;color: #999;">主要制作一些便民小工具或服务，解压小游戏，开发中......<div/>
         <div/>`,
         show: false,
-        backgd: 'hero.png'
+        backgd: 'fushou344.jpg'
       }
     ],
     show: true

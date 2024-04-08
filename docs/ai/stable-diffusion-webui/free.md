@@ -17,7 +17,7 @@ customLabelArray: [1]
 - 缺点：底层还是 Stable-Diffusion，用起来方便的同时，就肯定损失了自由度
 - 界面长这样：
 
-![Vega](./Vega.png)
+![Vega](./imgs/Vega.png)
 
 ### 哩布立布
 
@@ -27,11 +27,11 @@ customLabelArray: [1]
 - 优点：同 Vega，但是模型多一些，我觉得用下来，出图的质量也好一点，每日免费算力 300，玩一玩其实也够了
 - 缺点：也同 Vega，本质上都是汉化版 Stable-Diffusion
 - 界面是这样的：
-  ![liblib](./liblib.png)
+  ![liblib](./imgs/liblib.png)
 
 - 点击在线生成，就会打开下面类似 Stable-Diffusion 的界面，可选模型可以在模型广场选，也能直接抄人家的参数，不用自己下载和部署模型啊插件啊，用起来还是挺方便的
 
-![liblib1](./liblib1.png)
+![liblib1](./imgs/liblib1.png)
 
 其实国内还有很多网站，但是大同小异，就不一一介绍了，按我的理解早晚都会调整计费，趁着免费赶紧玩哈哈，同时也最好自己部署一套 Stable-Diffusion，毕竟开源｜免费｜发展神速｜第一手尝鲜｜不受制于人｜等等
 
@@ -42,7 +42,7 @@ customLabelArray: [1]
 ### civitai(c 站)
 
 上面说到的 c 站，置顶推荐，如下图：
-![civitai](./civitai.png)
+![civitai](./imgs/civitai.png)
 
 - 网址：[https://civitai.com/](https://civitai.com/)
 
@@ -53,7 +53,7 @@ openAI 的产品，也可以顺带玩一玩 ChatGPT
 - 试玩：
 - [https://openai.com/dall-e-2/](https://openai.com/dall-e-2/)
 
-![dall-e-2](./dall-e-2.png)
+![dall-e-2](./imgs/dall-e-2.png)
 
 ### Midjourney
 

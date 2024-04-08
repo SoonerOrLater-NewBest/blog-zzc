@@ -47,6 +47,13 @@ npm run build
 
 - 第二步，官方文档讲得很清楚，详见[部署文档](https://vuepress.vuejs.org/zh/guide/deploy.html#github-pages)
 
+- 在本项目中执行`release`是发布到我的 github 主页
+
+```bash
+# 如果看了上述文档决定和我一样，就修改package.json/scripts/release指令后面的内容
+npm run release
+```
+
 ## 如何改造成自己的博客
 
 - 如果想要用我这个项目，自己写文章的话，只要修改`docs`和`src/api`文件即可
@@ -83,15 +90,9 @@ sidebarright: false
 比如 md 中链接格式是`[xxxx](.....)`默认样式是会换行的，但我想要他不换行
 
 ```html
- <!-- xxxxxx.md -->
+<!-- xxxxxx.md -->
 <div class="href-wrap">
-
-[xxxx](.....)
-
-[xxx](.....)
-
-[xx](.....)
-
+  [xxxx](.....) [xxx](.....) [xx](.....)
 </div>
 ```
 

@@ -191,7 +191,9 @@ module.exports = {
           children: [
             ['', '图片模型介绍'],
             ['stable-diffusion-webui/install', '本地部署stable-diffusion'],
-            ['stable-diffusion-webui/free', 'AI 画图免费在线试玩网站']
+            ['stable-diffusion-webui/free', 'AI 画图免费在线试玩网站'],
+            ['stable-diffusion-webui/prompt', 'AI 绘画 prompt 提示词的进阶使用'],
+            ['video/shorts', 'AI 制作短片，解放生产力']
           ]
         }
       ]

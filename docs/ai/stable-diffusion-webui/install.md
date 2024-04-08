@@ -35,7 +35,7 @@ Stable Diffusion WebUI 当然支持 Windows/Linux，也适配三种芯片
 
 ### 3、 克隆安装 webui 软件
 
-- 根据[Installation on Intel Silicon](https://github.com/openvinotoolkit/stable-diffusion-webui/wiki/Installation-on-Intel-Silicon)，我们选择在“终端”中输入：`git clone https://github.com/openvinotoolkit/stable-diffusion-webui.git`，然后回车等待自动安装完成，这里就用到了上面安装的 git，如果实在用不来，也可以直接去 github 网站上，download 这个项目的压缩包直接解压即可![download](./image.png)
+- 根据[Installation on Intel Silicon](https://github.com/openvinotoolkit/stable-diffusion-webui/wiki/Installation-on-Intel-Silicon)，我们选择在“终端”中输入：`git clone https://github.com/openvinotoolkit/stable-diffusion-webui.git`，然后回车等待自动安装完成，这里就用到了上面安装的 git，如果实在用不来，也可以直接去 github 网站上，download 这个项目的压缩包直接解压即可![download](./imgs/image.png)
 
 * 虽然`AUTOMATIC1111`才是主仓库且已经更新到 1.8 版本，但是我看最新版没有了`OpenVINO`这个自定义脚本，所以我们就选择了`openvinotoolkit`，这个仓库还是 1.6 版本
 * 接着安装项目运行所需依赖
@@ -62,7 +62,7 @@ trusted-host = pypi.doubanio.com
 ```
 
 - 或直接在源码里加也是可以的，如下图，找到`stable-diffusion-webui/modules/launch_utils.py`第 138 行，增加"-i https://mirrors.aliyun.com/pypi/simple/"
-  ![pip](./image1.png)
+  ![pip](./imgs/image1.png)
 
 * 安装会遇到各种问题，详见下一章，安装完成后，还要下载模型然后导入（直接放进对应文件夹，可以参考最上面的文章）
 
@@ -103,4 +103,4 @@ export COMMANDLINE_ARGS="--skip-torch-cuda-test --precision full --no-half"
 - 即使切换了源可以下载，也建议自行下载好模型后放入文件夹，因为模型都比较大
 - 然后 lora 模型，插件配置等，还是建议参考[手把手教你在 Mac 上部署 stable-diffusion，晋级高阶 AI 绘图及模型训练](https://zhuanlan.zhihu.com/p/637067918)
 
-![ui](./image2.png)
+![ui](./imgs/image2.png)

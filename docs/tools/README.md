@@ -4,7 +4,7 @@ customLabelArray: [1]
 
 # <Label :level='1'/> Vuepress 静态博客搭建
 
-静态博客作为文章孵化池，再合适不过，markdown 格式既方便又美观，Vuepress 还支持很多扩展功能
+静态博客作为文章孵化池，再合适不过，markdown 格式既方便又美观，Vuepress 还支持很多扩展功能，还能一键部署到 github 无需服务器，随时查看
 
 ## 快速开始
 
