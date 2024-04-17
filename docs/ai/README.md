@@ -32,5 +32,3 @@ customLabelArray: [1]
 
 7. **This Person Does Not Exist**
    - 这个网站使用 NVIDIA 开发的 StyleGAN 模型，每次刷新时都会生成一个逼真的人脸图像，这些人脸都是完全由 AI 创造的。
-
-[在 Mac 上部署 stable-diffusion](https://zhuanlan.zhihu.com/p/637067918)
