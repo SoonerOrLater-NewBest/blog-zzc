@@ -195,6 +195,14 @@ module.exports = {
             ['stable-diffusion-webui/prompt', 'AI 绘画 prompt 提示词的进阶使用'],
             ['video/shorts', 'AI 制作短片，解放生产力']
           ]
+        },
+        {
+          title: 'ComfyUI',
+          collapsable: false,
+          children: [
+            ['comfyui/install', ' Mac (Intel 集成显卡)安装 ComfyUI'],
+            ['comfyui/moda', '魔搭一键启动工作流']
+          ]
         }
       ]
     }
