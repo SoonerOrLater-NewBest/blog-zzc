@@ -43,3 +43,5 @@ A cute girl with these cat ears, White hair, whole body, (cry:2), emoticon bag6 
 #初始化
 本条消息只需要回复 OK，接下来的消息我将会给你发送完整的问题，收到后请按照上面的规则作出回答
 ```
+
+可问题在于，OpenAI 的 GPT 生态之所以能搞得热火朝天，GPT-4 强大的大模型能力才是核心，AI Agent（智能体）、GPTs 都是依赖 GPT-4 这颗大脑。
