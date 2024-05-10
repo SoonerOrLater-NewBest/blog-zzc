@@ -181,28 +181,37 @@ module.exports = {
         {
           title: '提效工具',
           collapsable: false,
-          children: [['', 'Vuepress静态博客搭建']]
+          children: [
+            ['', 'Vuepress静态博客搭建'],
+            ['navicat', 'Mac 安装 Navicat 数据库管理工具']
+          ]
         }
       ],
       '/ai/': [
         {
-          title: 'AIGC',
+          title: 'AI Agent',
+          collapsable: false,
+          children: [['common/Coze', 'Coze第一次尝试']]
+        },
+        {
+          title: 'AI学习-抛砖引玉',
           collapsable: false,
           children: [
-            ['', '图片模型介绍'],
-            ['stable-diffusion-webui/install', '本地部署stable-diffusion'],
+            ['chatgpt/chat', 'Prompt公式（翻译，育儿，表情包，构图）'],
+            ['chatgpt/kimi+', 'Kimi+值得推荐，Kimi 版 GPTs，提示词专家'],
+            ['comfyui/moda', '魔搭一键启动ComfyUI工作流'],
             ['stable-diffusion-webui/free', 'AI 画图免费在线试玩网站'],
             ['stable-diffusion-webui/prompt', 'AI 绘画 prompt 提示词的进阶使用'],
-            ['video/shorts', 'AI 制作短片，解放生产力']
+            ['video/shorts', 'AI 制作短片，解放生产力'],
+            ['comfyui/start', 'ComfyUI 的默认工作流拆解学习'],
+            ['comfyui/install', ' Mac (Intel 集成显卡)安装 ComfyUI'],
+            ['stable-diffusion-webui/install', 'Mac本地部署stable-diffusion']
           ]
         },
         {
-          title: 'ComfyUI',
+          title: 'AIGC',
           collapsable: false,
-          children: [
-            ['comfyui/install', ' Mac (Intel 集成显卡)安装 ComfyUI'],
-            ['comfyui/moda', '魔搭一键启动工作流']
-          ]
+          children: [['content/ai-cat', 'AI动画短片']]
         }
       ]
     }

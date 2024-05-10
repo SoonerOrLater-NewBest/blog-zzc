@@ -2,9 +2,9 @@
 customLabelArray: [1]
 ---
 
-# <Label :level='1'/> Prompt 公式
+# <Label :level='1'/> 分享一些 AI 的 Prompt 公式（翻译，育儿，表情包，构图）
 
-## 翻译
+## AiChat-翻译
 
 ```bash
 #角色：你是一位精通简体中文的专业翻译
@@ -19,18 +19,7 @@ customLabelArray: [1]
 本条消息只需要回复 OK，接下来的消息我将会给你发送完整内容，收到后请按照上面的规则打印两次翻译结果。
 ```
 
-## 表情包
-
-```bash
-different expressions of the  主体, emoji sheet, [happy, angry, sad, cry, cute, expecting, laughing, disappointed], white background, 色彩,illustration
-```
-
-```bash
-#eg:
-A cute girl with these cat ears, White hair, whole body, (cry:2), emoticon bag6 emoticonsemoticon Symbol table, Clothes in pink and white colors, multiple postures and expressions, anthropomorphic style, different emotions, multiple poss and expressions, illustration
-```
-
-## 垂直行业公式
+## AiChat-垂直行业公式
 
 以育儿为例：
 
@@ -44,4 +33,36 @@ A cute girl with these cat ears, White hair, whole body, (cry:2), emoticon bag6 
 本条消息只需要回复 OK，接下来的消息我将会给你发送完整的问题，收到后请按照上面的规则作出回答
 ```
 
-可问题在于，OpenAI 的 GPT 生态之所以能搞得热火朝天，GPT-4 强大的大模型能力才是核心，AI Agent（智能体）、GPTs 都是依赖 GPT-4 这颗大脑。
+## AI 画图-表情包
+
+```bash
+# 替换里面的主体，选择[]里面的情绪，修改色彩
+different expressions of the  主体, emoji sheet, [happy, angry, sad, cry, cute, expecting, laughing, disappointed], white background, 色彩,illustration
+```
+
+```bash
+#eg:
+A cute girl with these cat ears, White hair, whole body, (cry:2), emoticon bag6 emoticonsemoticon Symbol table, Clothes in pink and white colors, multiple postures and expressions, anthropomorphic style, different emotions, multiple poss and expressions, illustration
+```
+
+## AI 画图-构图公式
+
+```bash
+create a [构图方式],
+```
+
+- 第一种：对称构图 （Symmetry compositio）
+- 第二种：三分法构图（Trichotomy composition ）
+- 第三种：曲线构图（curved composition ）
+- 第四种：圆形构图（ circular composition ）
+- 第五种：垂直构图（ circular composition ）
+- 第六种：极简主义构图（minimalist composition）
+- 第七种：引导线构图（ Leading line）
+- 第八种：黄金分割构图（ Golden section composition）
+
+```bash
+#eg:用曲线构图举个例子
+create a curved composition, depicting a futuristic technology scene, In the center of the scene stands a person, Far view, looking into the distance，surrounded by advanced technological structures and a futuristic cityscape in the distance, Illustration art, high-definition picture quality
+```
+
+**本篇完，觉得有用，点个关注，万分感谢 🙏**

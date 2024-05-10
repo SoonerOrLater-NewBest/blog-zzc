@@ -2,7 +2,7 @@
 customLabelArray: [1]
 ---
 
-# <Label :level='1'/> Coze+Kimi=国产 GPTs?什么 bot，Agent，智能体，从入门到放弃
+# <Label :level='1'/> Coze 第一次尝试，从入门到放弃
 
 > 昨天月之暗面宣布 kimi 大模型入驻 coze 本以为是强强联合。
 
