@@ -49,11 +49,16 @@ module.exports = {
           children: [['', '分类导航']]
         },
         {
-          title: '云服务器',
+          title: 'NodeJs',
           collapsable: false,
           children: [
-            ['cloud/cloud', '云服务器自建部署流程'],
-            ['cloud/nginx', 'Nginx']
+            ['nodejs/mzid', 'Node 实战《梦幻模拟战礼包兑换》实现思路'],
+            ['nodejs/npm', 'NPM 包管理器'],
+            ['nodejs/npm-dependency', 'NPM 精准控制依赖版本'],
+            ['nodejs/npm-release', 'NPM 发布和使用 CLI 工具'],
+            ['nodejs/oclif', 'Oclif 入门到实战'],
+            ['nodejs/apidoc', 'apiDoc 生成 api 接口文档'],
+            ['nodejs/type-orm', 'TypeORM 框架基本使用']
           ]
         },
         {
@@ -66,15 +71,11 @@ module.exports = {
           ]
         },
         {
-          title: 'NodeJs',
+          title: '云服务器',
           collapsable: false,
           children: [
-            ['nodejs/npm', 'NPM 包管理器'],
-            ['nodejs/npm-dependency', 'NPM 精准控制依赖版本'],
-            ['nodejs/npm-release', 'NPM 发布和使用 CLI 工具'],
-            ['nodejs/oclif', 'Oclif 入门到实战'],
-            ['nodejs/apidoc', 'apiDoc 生成 api 接口文档'],
-            ['nodejs/type-orm', 'TypeORM 框架基本使用']
+            ['cloud/cloud', '云服务器自建部署流程'],
+            ['cloud/nginx', 'Nginx']
           ]
         }
       ],
