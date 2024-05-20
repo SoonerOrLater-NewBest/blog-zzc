@@ -210,7 +210,7 @@ module.exports = {
           ]
         },
         {
-          title: 'AIGC',
+          title: 'AI实战',
           collapsable: false,
           children: [['content/ai-cat', 'AI动画短片']]
         }

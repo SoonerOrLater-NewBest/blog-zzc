@@ -32,7 +32,5 @@ customLabelArray: [1]
 - coze 在线体验
   https://www.coze.cn/store/bot/7361686869337636879?bot_id=true
 
-- 公众号直接回消息：我要玩看图猜成语
-
 * gpt4 这个脑子还是比国产的好一些
 * 持续观望，继续学习吧，可能我太菜了，教不会这玩意
