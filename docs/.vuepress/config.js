@@ -189,31 +189,28 @@ module.exports = {
         }
       ],
       '/ai/': [
-        {
-          title: 'AI Agent',
-          collapsable: false,
-          children: [['common/Coze', 'Coze第一次尝试']]
-        },
+        // {
+        //   title: 'AI Agent',
+        //   collapsable: false,
+        //   children: [['common/Coze', 'Coze第一次尝试']]
+        // },
         {
           title: 'AI学习-抛砖引玉',
           collapsable: false,
           children: [
             ['chatgpt/chat', 'Prompt公式（翻译，育儿，表情包，构图）'],
             ['chatgpt/kimi+', 'Kimi+值得推荐，Kimi 版 GPTs，提示词专家'],
-            ['comfyui/moda', '魔搭一键启动ComfyUI工作流'],
-            ['stable-diffusion-webui/free', 'AI 画图免费在线试玩网站'],
             ['stable-diffusion-webui/prompt', 'AI 绘画 prompt 提示词的进阶使用'],
-            ['video/shorts', 'AI 制作短片，解放生产力'],
             ['comfyui/start', 'ComfyUI 的默认工作流拆解学习'],
             ['comfyui/install', ' Mac (Intel 集成显卡)安装 ComfyUI'],
             ['stable-diffusion-webui/install', 'Mac本地部署stable-diffusion']
           ]
-        },
-        {
-          title: 'AI实战',
-          collapsable: false,
-          children: [['content/ai-cat', 'AI动画短片']]
         }
+        // {
+        //   title: 'AI实战',
+        //   collapsable: false,
+        //   children: [['content/aiReptiles', '和chatgpt聊聊天就把网络爬虫做好了']]
+        // }
       ]
     }
   }

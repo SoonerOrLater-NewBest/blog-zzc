@@ -2,7 +2,7 @@
 customLabelArray: [1]
 ---
 
-# <Label :level='1'/> 《普通打工仔，下班后在公众号里摸爬滚打 2 个月的心得，还顺手给自己画了块大饼》
+# <Label :level='1'/> 《普通上班族，下班后在公众号里摸爬滚打 2 个月的心得，还顺手给自己画了块大饼》
 
 ## 谈一谈这开头的 2 个月历程
 
@@ -51,3 +51,63 @@ customLabelArray: [1]
 - 看到有人说过一个套路，就是开小号去带节奏，还有就是搞擦边，搞男女对立，搞媚男媚女这些话题度和节奏满满的；
 - emmmmm，我还是觉得擦边等黑科技非长久之计，无德不足以载物，如果你没有足够的积累和有趣的灵魂是接不住这泼天的富贵的；
 - 有空再思考一下做啥吧，学 AI 也是为了解放生产力，一步步来；
+
+```md
+你是一个 nodejs 编程专家，接下来要用 Node.js 和 Puppeteer 实现一个脚本，按照要求完成爬取最新日漫内容并将其保存到 Excel 文件，同时下载相关图片和视频。脚本使用了多进程来提高执行效率，并添加了错误处理和进度条显示功能，具体步骤如下：
+
+在当前文件夹下新建一个文件夹以当前时间命名，格式为'yyyy-mm-dd'，然后进入这个文件夹创建一个 Excel 文件：最新日漫.xlsx
+
+打开网页：https://www.857yhdm.com/type/ribendongman.html
+
+循环定位前 5 个 class="myui-vodlist\_\_box"的 div 标签；
+
+在每个 div 标签循环事件中按以下步骤执行：
+
+1. 定位 div 标签里面的 h4 标签，将 title 属性值，写入“最新日漫.xlsx”这个 Excel 文件的第 1 列，列的标头为：标题，记住这个标题，后面下载图片和文件都使用这个来命名；
+2. 定位第一个 a 标签，把 data-original 属性值，写入“最新日漫.xlsx”这个 Excel 文件的第 2 列，列的标头为：缩略图；把图片下载下来命名为刚刚的标题，放到当前文件夹下的 images 文件夹中，如果没有这个文件夹就先创建；
+3. 定位 class="pic-text text-right"的 span 标签，提取其文本内容作为更新状态，写入“最新日漫.xlsx”这个 Excel 文件的第 3 列，列的标头为：更新状态；
+4. 点击这个 a 标签，进入详情页；
+5. 在详情页中定位 class="myui-content\_\_list sort-list clearfix"的 ul 标签，循环提取其中最后一个 a 标签的 href 属性值，前面加上"https://www.857yhdm.com",构造成一个URL数组，写入”最新日漫.xlsx”这个Excel文件的第4列，列的标头为：最新一集播放链接；
+6. 然后点击这个 a 标签，进入播放页面后，找到 table 标签下面的 iframe；
+7. 加载这个 iframe 页面，然后找到 id="lelevideo"的 video 标签，把 src 属性中的视频下载下来，命名为对应标题加`第${a标签所在循环的索引数+1}集`，放到 videos 文件夹中，如果没有这个文件夹就先创建，下载的时候要显示进度条；
+
+## 规则：
+
+1. 每一步都要输出相关信息到屏幕；
+2. 按代码规范写好注释；
+3. 注意处理反爬虫机制：
+
+- 设置用户代理和请求头
+- 使用 waitForTimeout 随机延迟请求，模拟人为操作
+
+## 优化代码：
+
+1. 根据 CPU 核心数自动配置工作进程的数量，采用多进程运行这个脚本，多进程异步执行的时候记得记录好索引，最后输出的时候要按照索引排好序；
+2. 在工作子进程中，下载的时候要显示进度条；
+3. 添加错误处理：在 Worker 线程中使用 try...catch 捕获可能的错误，并在捕获到错误时输出错误信息，而不是直接终止程序；
+4. 运行完关闭这些进程；
+```
+
+## MacOS:命令行解压.文件
+
+```bash
+*.tar
+
+解包：tar -xvf fileName.tar
+打包：tar -cvf fileName.tar DirName
+
+*.gz
+解压1：gunzip fileName.gz
+解压2：gzip -d fileName.gz
+压缩：gzip FileName
+
+
+*.tar.gz
+解压：tar zxvf fileName.tar.gz
+压缩：tar zcvf fileName.tar.gz file_path
+
+*.7z
+brew install p7zip
+解压：7za x yourfile.7z
+压缩：7za a -t7z -r fileName.7z file_path
+```

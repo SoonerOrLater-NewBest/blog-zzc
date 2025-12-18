@@ -16,7 +16,9 @@ customLabelArray: [1]
 ## 与 WebUI 对比
 
 先看两张图：上面是 ComfyUI 界面，下面是 WebUI 界面
-![cimfyui](./imgs/img1.webp)
+
+<!-- ![cimfyui](./imgs/img1.webp) -->
+
 ![webui](../stable-diffusion-webui/imgs/image2.png)
 
 - 乍一看感觉 ComfyUI 很复杂是不是
