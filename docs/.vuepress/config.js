@@ -86,6 +86,11 @@ module.exports = {
           children: [['', '简介&导航']]
         },
         {
+          title: '我的DEMO',
+          collapsable: false,
+          children: [['articles/ble', '蓝牙BLE开发流程演示']]
+        },
+        {
           title: '我的作品',
           collapsable: false,
           children: [['my-creation/static-blog', '静态博客']]
