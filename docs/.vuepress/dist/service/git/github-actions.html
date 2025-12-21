@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GitHub Actions 持续集成 | 前端野路子</title>
+    <meta name="description" content="Vue + Vuepress + Element-Ui + MarkDown + Axios">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.b0bd6a5f.css" as="style"><link rel="preload" href="/assets/js/app.ca138bf0.js" as="script"><link rel="preload" href="/assets/js/3.2dc10a6c.js" as="script"><link rel="preload" href="/assets/js/2.f56b7d3c.js" as="script"><link rel="preload" href="/assets/js/120.e3d56bdd.js" as="script"><link rel="preload" href="/assets/js/9.86c6a2be.js" as="script"><link rel="prefetch" href="/assets/js/10.4fb5d23f.js"><link rel="prefetch" href="/assets/js/100.ea32e893.js"><link rel="prefetch" href="/assets/js/101.1213a8c4.js"><link rel="prefetch" href="/assets/js/102.5e0e1d37.js"><link rel="prefetch" href="/assets/js/103.a6eccdf2.js"><link rel="prefetch" href="/assets/js/104.a11990e7.js"><link rel="prefetch" href="/assets/js/105.765506b0.js"><link rel="prefetch" href="/assets/js/106.c12f461c.js"><link rel="prefetch" href="/assets/js/107.4f0a4d30.js"><link rel="prefetch" href="/assets/js/108.b7fb388b.js"><link rel="prefetch" href="/assets/js/109.78f12f71.js"><link rel="prefetch" href="/assets/js/11.933f863b.js"><link rel="prefetch" href="/assets/js/110.e4b84986.js"><link rel="prefetch" href="/assets/js/111.c5dc8a8e.js"><link rel="prefetch" href="/assets/js/112.3c353195.js"><link rel="prefetch" href="/assets/js/113.4c6cb33e.js"><link rel="prefetch" href="/assets/js/114.3f555026.js"><link rel="prefetch" href="/assets/js/115.d07e46d8.js"><link rel="prefetch" href="/assets/js/116.515303f4.js"><link rel="prefetch" href="/assets/js/117.d98fa39c.js"><link rel="prefetch" href="/assets/js/118.b32a2b4b.js"><link rel="prefetch" href="/assets/js/119.35f9e26a.js"><link rel="prefetch" href="/assets/js/12.9c3569bf.js"><link rel="prefetch" href="/assets/js/121.ce6651f1.js"><link rel="prefetch" href="/assets/js/122.8d994b7f.js"><link rel="prefetch" href="/assets/js/123.dd1a2bfb.js"><link rel="prefetch" href="/assets/js/124.abc0c274.js"><link rel="prefetch" href="/assets/js/125.0464bb8f.js"><link rel="prefetch" href="/assets/js/126.91970952.js"><link rel="prefetch" href="/assets/js/127.8c3393c9.js"><link rel="prefetch" href="/assets/js/128.86280a83.js"><link rel="prefetch" href="/assets/js/129.e8566151.js"><link rel="prefetch" href="/assets/js/13.893c0c77.js"><link rel="prefetch" href="/assets/js/14.1bd2a237.js"><link rel="prefetch" href="/assets/js/15.25573d41.js"><link rel="prefetch" href="/assets/js/16.5ba9ed44.js"><link rel="prefetch" href="/assets/js/17.c80c4b2a.js"><link rel="prefetch" href="/assets/js/18.99ea6459.js"><link rel="prefetch" href="/assets/js/19.c12933aa.js"><link rel="prefetch" href="/assets/js/20.54a76890.js"><link rel="prefetch" href="/assets/js/21.0c1163f9.js"><link rel="prefetch" href="/assets/js/22.80e3f574.js"><link rel="prefetch" href="/assets/js/23.7eddd6f4.js"><link rel="prefetch" href="/assets/js/24.993fcd19.js"><link rel="prefetch" href="/assets/js/25.5bac6bcd.js"><link rel="prefetch" href="/assets/js/26.05a5919f.js"><link rel="prefetch" href="/assets/js/27.f81a4b2a.js"><link rel="prefetch" href="/assets/js/28.fcd25264.js"><link rel="prefetch" href="/assets/js/29.3fb95bb6.js"><link rel="prefetch" href="/assets/js/30.2edb1ff0.js"><link rel="prefetch" href="/assets/js/31.315d5b64.js"><link rel="prefetch" href="/assets/js/32.ccd91720.js"><link rel="prefetch" href="/assets/js/33.8a717421.js"><link rel="prefetch" href="/assets/js/34.31e76725.js"><link rel="prefetch" href="/assets/js/35.b479a06d.js"><link rel="prefetch" href="/assets/js/36.478418b0.js"><link rel="prefetch" href="/assets/js/37.6fad5d1e.js"><link rel="prefetch" href="/assets/js/38.224e84da.js"><link rel="prefetch" href="/assets/js/39.489d4ae6.js"><link rel="prefetch" href="/assets/js/4.19793402.js"><link rel="prefetch" href="/assets/js/40.f78a0b78.js"><link rel="prefetch" href="/assets/js/41.7728e103.js"><link rel="prefetch" href="/assets/js/42.6fff90eb.js"><link rel="prefetch" href="/assets/js/43.935573a5.js"><link rel="prefetch" href="/assets/js/44.f8badd7f.js"><link rel="prefetch" href="/assets/js/45.f751fadd.js"><link rel="prefetch" href="/assets/js/46.f9fcb8f6.js"><link rel="prefetch" href="/assets/js/47.478dce55.js"><link rel="prefetch" href="/assets/js/48.5816b4e1.js"><link rel="prefetch" href="/assets/js/49.7af7bc06.js"><link rel="prefetch" href="/assets/js/5.57e20511.js"><link rel="prefetch" href="/assets/js/50.dd982970.js"><link rel="prefetch" href="/assets/js/51.dc302f60.js"><link rel="prefetch" href="/assets/js/52.355c3333.js"><link rel="prefetch" href="/assets/js/53.f4d81c32.js"><link rel="prefetch" href="/assets/js/54.f806ae64.js"><link rel="prefetch" href="/assets/js/55.9fff2986.js"><link rel="prefetch" href="/assets/js/56.95d94ec3.js"><link rel="prefetch" href="/assets/js/57.88d12c4d.js"><link rel="prefetch" href="/assets/js/58.22311a5b.js"><link rel="prefetch" href="/assets/js/59.094f3c56.js"><link rel="prefetch" href="/assets/js/6.53a396b6.js"><link rel="prefetch" href="/assets/js/60.39191cb0.js"><link rel="prefetch" href="/assets/js/61.68e4dc3e.js"><link rel="prefetch" href="/assets/js/62.3611d120.js"><link rel="prefetch" href="/assets/js/63.335dfd87.js"><link rel="prefetch" href="/assets/js/64.fb3d6e98.js"><link rel="prefetch" href="/assets/js/65.4d350726.js"><link rel="prefetch" href="/assets/js/66.eb3b3542.js"><link rel="prefetch" href="/assets/js/67.ea3fa944.js"><link rel="prefetch" href="/assets/js/68.87374969.js"><link rel="prefetch" href="/assets/js/69.64abaac2.js"><link rel="prefetch" href="/assets/js/7.5f3f4aaa.js"><link rel="prefetch" href="/assets/js/70.4fa1f937.js"><link rel="prefetch" href="/assets/js/71.eefcb230.js"><link rel="prefetch" href="/assets/js/72.5b609d81.js"><link rel="prefetch" href="/assets/js/73.3db648de.js"><link rel="prefetch" href="/assets/js/74.5f13c3e8.js"><link rel="prefetch" href="/assets/js/75.e0d4fd16.js"><link rel="prefetch" href="/assets/js/76.eeb73624.js"><link rel="prefetch" href="/assets/js/77.73b2b73a.js"><link rel="prefetch" href="/assets/js/78.fbecf2d1.js"><link rel="prefetch" href="/assets/js/79.398b9683.js"><link rel="prefetch" href="/assets/js/8.c1d402e6.js"><link rel="prefetch" href="/assets/js/80.f63f8554.js"><link rel="prefetch" href="/assets/js/81.ca6725a7.js"><link rel="prefetch" href="/assets/js/82.70b1cb39.js"><link rel="prefetch" href="/assets/js/83.51e35382.js"><link rel="prefetch" href="/assets/js/84.ecf96e22.js"><link rel="prefetch" href="/assets/js/85.a29b6b52.js"><link rel="prefetch" href="/assets/js/86.7d9eef0d.js"><link rel="prefetch" href="/assets/js/87.c2975d6c.js"><link rel="prefetch" href="/assets/js/88.68c740b7.js"><link rel="prefetch" href="/assets/js/89.a0192bcb.js"><link rel="prefetch" href="/assets/js/90.1c621b5e.js"><link rel="prefetch" href="/assets/js/91.661c59c0.js"><link rel="prefetch" href="/assets/js/92.9b7d20f0.js"><link rel="prefetch" href="/assets/js/93.1766758d.js"><link rel="prefetch" href="/assets/js/94.7fa3ee12.js"><link rel="prefetch" href="/assets/js/95.02f21a0a.js"><link rel="prefetch" href="/assets/js/96.98d2714e.js"><link rel="prefetch" href="/assets/js/97.045e1bed.js"><link rel="prefetch" href="/assets/js/98.5c826898.js"><link rel="prefetch" href="/assets/js/99.6c05d4fb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b0bd6a5f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.jpg" alt="前端野路子" class="logo"> <span class="site-name can-hide">前端野路子</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><span><i class="el-icon-s-home"></i></span>
+
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><!---->
+关于我
+</a></div><div class="nav-item"><a href="/front-end/" class="nav-link"><span><i class="el-icon-star-on"></i></span>
+前端相关
+</a></div><div class="nav-item"><a href="/service/" class="nav-link router-link-active"><!---->
+后端服务
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link"><!---->
+提效工具
+</a></div><div class="nav-item"><a href="/ai/" class="nav-link"><span><i class="el-icon-view"></i></span>
+AIGC
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Contact" class="dropdown-title"><span class="title">Contact</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://segmentfault.com/u/zhouzhenchao" target="_blank" rel="noopener noreferrer" class="nav-link external"><!---->
+  Segmentfault
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/SoonerOrLater-NewBest" target="_blank" rel="noopener noreferrer" class="nav-link external"><!---->
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><span><i class="el-icon-s-home"></i></span>
+
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><!---->
+关于我
+</a></div><div class="nav-item"><a href="/front-end/" class="nav-link"><span><i class="el-icon-star-on"></i></span>
+前端相关
+</a></div><div class="nav-item"><a href="/service/" class="nav-link router-link-active"><!---->
+后端服务
+</a></div><div class="nav-item"><a href="/tools/" class="nav-link"><!---->
+提效工具
+</a></div><div class="nav-item"><a href="/ai/" class="nav-link"><span><i class="el-icon-view"></i></span>
+AIGC
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Contact" class="dropdown-title"><span class="title">Contact</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://segmentfault.com/u/zhouzhenchao" target="_blank" rel="noopener noreferrer" class="nav-link external"><!---->
+  Segmentfault
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/SoonerOrLater-NewBest" target="_blank" rel="noopener noreferrer" class="nav-link external"><!---->
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>后端服务</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/service/" class="sidebar-link">分类导航</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>NodeJs</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/service/nodejs/mzid.html" class="sidebar-link">Node 实战《梦幻模拟战礼包兑换》实现思路</a></li><li><a href="/service/nodejs/npm.html" class="sidebar-link">NPM 包管理器</a></li><li><a href="/service/nodejs/npm-dependency.html" class="sidebar-link">NPM 精准控制依赖版本</a></li><li><a href="/service/nodejs/npm-release.html" class="sidebar-link">NPM 发布和使用 CLI 工具</a></li><li><a href="/service/nodejs/oclif.html" class="sidebar-link">Oclif 入门到实战</a></li><li><a href="/service/nodejs/apidoc.html" class="sidebar-link">apiDoc 生成 api 接口文档</a></li><li><a href="/service/nodejs/type-orm.html" class="sidebar-link">TypeORM 框架基本使用</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Git相关</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/service/git/git-quick-start.html" class="sidebar-link">Git 快速上手</a></li><li><a href="/service/git/git-cheat-sheet.html" class="sidebar-link">Git 备忘清单</a></li><li><a href="/service/git/github-actions.html" class="active sidebar-link">GitHub Actions 持续集成</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>云服务器</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/service/cloud/cloud.html" class="sidebar-link">云服务器自建部署流程</a></li><li><a href="/service/cloud/nginx.html" class="sidebar-link">Nginx</a></li></ul></section></li></ul> </aside> <aside class="sidebar sidebar-right"> <div class="advertisement" data-v-919cc31c><img src="/hero.png" alt="banner" data-v-919cc31c></div> <div class="table-of-contents" data-v-03011b6e><h4 data-v-03011b6e>目录</h4> <ul data-v-03011b6e><li data-v-03011b6e><a href="#自动更新静态资源简单流程" class="active" data-v-03011b6e>自动更新静态资源简单流程</a></li></ul></div> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="github-actions-持续集成"><a href="#github-actions-持续集成" class="header-anchor">#</a> <span data-content="原创" class="blog-type-common blog-type-1" data-v-b25d40b2></span>GitHub Actions 持续集成</h1> <blockquote><p><a href="https://docs.github.com/zh/actions/learn-github-actions/understanding-github-actions" target="_blank" rel="noopener noreferrer">了解 GitHub Actions<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <blockquote><p><a href="https://docs.github.com/zh/actions" target="_blank" rel="noopener noreferrer">GitHub Actions 文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h2 id="自动更新静态资源简单流程"><a href="#自动更新静态资源简单流程" class="header-anchor">#</a> 自动更新静态资源简单流程</h2> <ul><li>拉取当前 Github 仓库代码并切换到相应的分支</li> <li>安装 Node 和 Npm 环境</li> <li>安装项目的依赖</li> <li>构建库包和演示文档的静态资源</li> <li>发布演示文档的静态资源</li></ul> <p>通过查看 <a href="https://github.com/marketplace?type=actions" target="_blank" rel="noopener noreferrer">官方 Actions<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 和 <a href="https://github.com/sdras/awesome-actions" target="_blank" rel="noopener noreferrer">awesome-actions<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，找到所需的 Actions:</p> <ul><li><a href="https://github.com/actions/checkout" target="_blank" rel="noopener noreferrer">Checkout<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>: 从 Github 拉取仓库代码到 Github 服务器的 $GITHUB_WORKSPACE 目录下</li> <li><a href="https://github.com/actions/cache" target="_blank" rel="noopener noreferrer">cache<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>: 缓存 npm</li> <li><a href="https://github.com/actions/setup-node" target="_blank" rel="noopener noreferrer">setup-node<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>: 安装 Node 和 Npm 环境</li> <li><a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" rel="noopener noreferrer">actions-gh-pages<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>: 在 Github 上发布静态资源</li></ul> <p>在 .github/workflows 下新增 mian.yml 配置文件：</p> <div class="language-yml line-numbers-mode"><pre class="language-yml"><code><span class="token comment"># 以下都是官方文档的简单翻译</span>
+<span class="token comment"># 当前的 yml（.yaml） 文件是一个 workflow，是持续集成一次运行的一个过程，必须放置在项目的 .github/workflow 目录下</span>
+<span class="token comment"># 如果不清楚 .yml 文件格式语法，可以查看 https://www.codeproject.com/Articles/1214409/Learn-YAML-in-five-minutes</span>
+<span class="token comment"># 初次编写难免会产生格式问题，可以使用 VS Code 插件进行格式检测，https://marketplace.visualstudio.com/items?itemName=OmarTawfik.github-actions-vscode</span>
+
+<span class="token comment"># 具体各个配置属性可查看 https: //docs.github.com/en/actions/reference/workflow-syntax-for-github-actions</span>
+
+<span class="token comment"># workflow 的执行仍然会受到一些限制，例如</span>
+<span class="token comment">#  - 每个 job 最多执行 6 小时（本地机器不受限制）</span>
+<span class="token comment">#  - 每个 workflow 最多执行 72 小时</span>
+<span class="token comment">#  - 并发 job 的数量会受到限制</span>
+<span class="token comment">#  - 更多查看 https: //docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#usage-limits</span>
+
+<span class="token comment"># name: 当前 workflow 的名称</span>
+<span class="token key atrule">name</span><span class="token punctuation">:</span> my<span class="token punctuation">-</span>actions
+
+<span class="token comment"># on:  指定 workflow 触发的 event</span>
+<span class="token comment">#</span>
+<span class="token comment">#      event 有以下几种类型</span>
+<span class="token comment">#         - webhook</span>
+<span class="token comment">#         - scheduled</span>
+<span class="token comment">#         - manual</span>
+<span class="token key atrule">on</span><span class="token punctuation">:</span>
+  <span class="token comment"># push: 一个 webhook event，用于提交代码时触发 workflow，也可以是触发列表，例如 [push, pull_request]</span>
+
+  <span class="token comment">#        workflows 触发的 event 大部分是基于 webhook 配置，以下列举几个常见的 webhook:</span>
+  <span class="token comment">#           - delete:  删除一个 branch 或 tag 时触发</span>
+  <span class="token comment">#           - fork / watch:  某人 fork / watch 项目时触发（你问有什么用，发送邮件通知不香吗？）</span>
+  <span class="token comment">#           - pull_request:  提交 PR 时触发</span>
+  <span class="token comment">#           - page_build:  提交 Github Pages-enabled 分支代码时触发</span>
+  <span class="token comment">#           - push:  提交代码到特定分支时触发</span>
+  <span class="token comment">#           - registry_package:  发布或跟新 package 时触发</span>
+  <span class="token comment">#           更多 webhook 可查看 https: //docs.github.com/en/actions/reference/events-that-trigger-workflows</span>
+  <span class="token comment">#           从这里可以看出 Git Actions 的一大特点就是 Gihub 官方提供的一系列 webhook</span>
+  <span class="token key atrule">push</span><span class="token punctuation">:</span>
+    <span class="token comment"># branches: 指定 push 触发的特定分支，这里你可以通过列表的形式指定多个分支</span>
+    <span class="token key atrule">branches</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> master
+    <span class="token comment">#</span>
+    <span class="token comment"># branches 的指定可以是通配符类型，例如以下配置可以匹配 refs/heads/releases/10</span>
+    <span class="token comment"># - 'releases/**'</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># branches 也可以使用反向匹配，例如以下不会匹配 refs/heads/releases/10</span>
+    <span class="token comment"># - '!releases/**'</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># branches-ignore:  只对 [push, pull_request] 两个 webhook 起作用，用于指定当前 webhook 不触发的分支</span>
+    <span class="token comment"># 需要注意在同一个 webhook 中不能和 branches 同时使用</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># tags:  只对 [push, pull_request] 两个 webhook 起作用，用于指定当前 webhook 触发的 tag</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># tags:</span>
+    <span class="token comment">#   - v1             # Push events to v1 tag</span>
+    <span class="token comment">#   - v1.*           # Push events to v1.0, v1.1, and v1.9 tags</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># tags-ignore:  类似于 branches-ignore</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># paths、paths-ignore...</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># 更多关于特定过滤模式可查看 https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># 其他的 webhook 控制项还包括 types（不是所有的 webhook 都有 types），例如已 issues 为例，可以在 issues 被 open、reopened、closed 等情况下触发 workflow</span>
+    <span class="token comment"># 更多 webhook 的 types 可查看 https: //docs.github.com/en/actions/reference/events-that-trigger-workflows#webhook-events</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># on:</span>
+    <span class="token comment">#   issues:</span>
+    <span class="token comment">#     types:  [opened, edited, closed]</span>
+
+  <span class="token comment"># 除此之外如果对于每个分支有不同的 webhook 触发，则可以通过以下形式进行多个 webhook 配置</span>
+  <span class="token comment">#</span>
+  <span class="token comment"># push:</span>
+  <span class="token comment">#   branches:</span>
+  <span class="token comment">#     - master</span>
+  <span class="token comment"># pull_request:</span>
+  <span class="token comment">#   branches:</span>
+  <span class="token comment">#     - dev</span>
+  <span class="token comment">#</span>
+  <span class="token comment"># 除了以上所说的 webhook event，还有 scheduled event 和 manual event</span>
+  <span class="token comment"># scheduled event:  用于定时构建，例如最小的时间间隔是 5 min 构建一次</span>
+  <span class="token comment"># 具体可查看 https: //docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events</span>
+
+<span class="token comment"># env:  指定环境变量（所有的 job 生效，每一个 job 可以独立通过 jobs.&lt;job_id&gt;.env、jobs.&lt;job_id&gt;.steps.env 配置）</span>
+<span class="token comment"># defaults / defaults.run: 所有的 job 生效，每一个 job 可以独立通过 jobs.&lt;job_id&gt;.defaults 配置</span>
+<span class="token comment"># deafults</span>
+<span class="token comment"># defaults.run</span>
+
+<span class="token comment"># jobs: 一个 workflow 由一个或多个 job 组成</span>
+<span class="token key atrule">jobs</span><span class="token punctuation">:</span>
+  <span class="token comment"># job id: 是 job 的唯一标识，可以通过 _ 进行连接，例如:  my_first_job，例如这里的 build 就是一个 job id</span>
+  <span class="token key atrule">build_and_deploy</span><span class="token punctuation">:</span>
+    <span class="token comment"># name: 在 Github 中显示的 job 名称</span>
+    <span class="token key atrule">name</span><span class="token punctuation">:</span> Build And Deploy
+    <span class="token comment">#</span>
+    <span class="token comment"># needs: 用于继发执行 job，例如当前 job build 必须在 job1 和 job2 都执行成功的基础上执行</span>
+    <span class="token comment"># needs: [job1, job2]</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># runs-on: job 运行的环境配置，包括:</span>
+    <span class="token comment">#   - windows-latest</span>
+    <span class="token comment">#   - windows-2019</span>
+    <span class="token comment">#   - ubuntu-20.04</span>
+    <span class="token comment">#   - ubuntu-latest</span>
+    <span class="token comment">#   - ubuntu-18.04</span>
+    <span class="token comment">#   - ubuntu-16.04</span>
+    <span class="token comment">#   - macos-latest</span>
+    <span class="token comment">#   - macos-10.15</span>
+    <span class="token comment">#   - self-hosted（本地机器，具体可查看 https: //docs.github.com/en/actions/hosting-your-own-runners/using-self-hosted-runners-in-a-workflow）</span>
+    <span class="token key atrule">runs-on</span><span class="token punctuation">:</span> ubuntu<span class="token punctuation">-</span>latest
+    <span class="token comment">#</span>
+    <span class="token comment"># outputs:  用于输出信息</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># env:  用于设置环境变量</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># defaults:  当前所有 step 的默认配置</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># defaults.run</span>
+
+    <span class="token comment"># if: 满足条件执行当前 job</span>
+
+    <span class="token comment"># steps:  一个 job 由多个 step 组成，step 可以</span>
+    <span class="token comment">#   - 执行一系列 tasks</span>
+    <span class="token comment">#   - 执行命令</span>
+    <span class="token comment">#   - 执行 action</span>
+    <span class="token comment">#   - 执行公共的 repository</span>
+    <span class="token comment">#   - 在 Docker registry 中的 action</span>
+    <span class="token key atrule">steps</span><span class="token punctuation">:</span>
+      <span class="token comment">#</span>
+      <span class="token comment"># id: 类似于 job id</span>
+      <span class="token comment">#</span>
+      <span class="token comment"># if:  类似于 job if</span>
+      <span class="token comment">#</span>
+      <span class="token comment"># name:  当前 step 的名字</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Checkout
+        <span class="token comment">#</span>
+        <span class="token comment"># uses: 用于执行 action</span>
+        <span class="token comment">#</span>
+        <span class="token comment">#       action: 可以重复使用的单元代码</span>
+        <span class="token comment">#          - 为了 workflow 的安全和稳定建议指定 action 的发布版本或 commit SHA</span>
+        <span class="token comment">#          - 使用指定 action 的 major 版本，这样可以允许你接收 fixs 以及 安全补丁并同时保持兼容性</span>
+        <span class="token comment">#          - 尽量不建议使用 master 版本，因为 master 很有可能会被发布新的 major 版本从而破坏了 action 的兼容性</span>
+        <span class="token comment">#          - action 可能是 JavaScript 文件或 Docker 容器，如果是 Docker 容器，那么 runs-on 必须指定 Linux 环境</span>
+        <span class="token comment">#</span>
+        <span class="token comment">#         指定固定 commit SHA</span>
+        <span class="token comment">#         uses:  actions/setup-node@74bc508</span>
+        <span class="token comment">#         指定一个 major 发布版本</span>
+        <span class="token comment">#         uses:  actions/setup-node@v1</span>
+        <span class="token comment">#         指定一个 minor 发布版本</span>
+        <span class="token comment">#         uses:  actions/setup-node@v1.2</span>
+        <span class="token comment">#         指定一个分支</span>
+        <span class="token comment">#         uses:  actions/setup-node@master</span>
+        <span class="token comment">#         指定一个 Github 仓库子目录的特定分支、ref 或 SHA</span>
+        <span class="token comment">#         uses:  actions/aws/ec2@master</span>
+        <span class="token comment">#         指定当前仓库所在 workflows 的目录地址</span>
+        <span class="token comment">#         uses:  ./.github/actions/my-action</span>
+        <span class="token comment">#         指定在 Dock Hub 发布的 Docker 镜像地址</span>
+        <span class="token comment">#         uses:  docker: //alpine: 3.8</span>
+        <span class="token comment">#         A Docker image in a public registry</span>
+        <span class="token comment">#         uses:  docker: //gcr.io/cloud-builders/gradle</span>
+
+        <span class="token comment"># checkout action 主要用于向 github 仓库拉取源代码（需要注意 workflow 是运行在服务器上，因此需要向当前 github 拉取仓库源代码）</span>
+        <span class="token comment"># 它的功能包括但不限于</span>
+        <span class="token comment">#   - Fetch all history for all tags and branches</span>
+        <span class="token comment">#   - Checkout a different branch</span>
+        <span class="token comment">#   - Checkout HEAD^</span>
+        <span class="token comment">#   - Checkout multiple repos (side by side)</span>
+        <span class="token comment">#   - Checkout multiple repos (nested)</span>
+        <span class="token comment">#   - Checkout multiple repos (private)</span>
+        <span class="token comment">#   - Checkout pull request HEAD commit instead of merge commit</span>
+        <span class="token comment">#   - Checkout pull request on closed event</span>
+        <span class="token comment">#   - Push a commit using the built-in token</span>
+
+        <span class="token comment"># checkout action:  https: //github.com/actions/checkout</span>
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/checkout@v2
+        <span class="token comment"># with: action 提供的输入参数</span>
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token comment"># 指定 checkout 的分支、tag 或 SHA</span>
+          <span class="token comment"># 更多 checkout action 的配置可查看 https: //github.com/actions/checkout#usage</span>
+          <span class="token key atrule">ref</span><span class="token punctuation">:</span> feat/ci
+        <span class="token comment"># args: 用于 Docker 容器的 CMD 指令参数</span>
+        <span class="token comment"># entrypoint: Docker 容器 action（覆盖 Dockerfile 的 ENTRYPOINT） 和 JavaScript action 都可以使用</span>
+      <span class="token comment">#</span>
+      <span class="token comment"># run: 使用当前的操作系统的默认的 non-login shell 执行命令行程序</span>
+      <span class="token comment"># 运行单个脚本</span>
+      <span class="token comment"># run: npm install</span>
+      <span class="token comment"># 运行多个脚本</span>
+      <span class="token comment"># run: |</span><span class="token scalar string">
+      #   npm ci
+      #   npm run build
+      #
+      # working-directory: 用于指定当前脚本运行的目录
+      # working-directory: ./temp
+      #
+      # shell: 可以指定 shell 类型进行执行，例如 bash、pwsh、python、sh、cmd、powershell
+      # shell: bash
+      #
+      # env: 除了可以设置 workflow 以及 job 的 env，也可以设置 step 的 env（可以理解为作用域不同，局部作用域的优先级更高）
+      #
+      # comtinue-on-error: 默认当前 step 失败则会阻止当前 job 继续执行，设置 true 时当前 step 失败则可以跳过当前 job 的执行</span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Cache
+        <span class="token comment"># cache action: https://github.com/actions/cache</span>
+        <span class="token comment"># cache 在这里主要用于缓存 npm，提升构建速率</span>
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/cache@v2
+        <span class="token comment"># npm 缓存的路径可查看 https://docs.npmjs.com/cli/cache#cache</span>
+        <span class="token comment"># 由于这里 runs-on 是 ubuntu-latest，因此配置 ~/.npm</span>
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token key atrule">path</span><span class="token punctuation">:</span> ~/.npm
+          <span class="token key atrule">key</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> runner.os <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">-</span>node<span class="token punctuation">-</span>$<span class="token punctuation">{</span><span class="token punctuation">{</span> hashFiles('**/package<span class="token punctuation">-</span>lock.json') <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token key atrule">restore-keys</span><span class="token punctuation">:</span> <span class="token punctuation">|</span><span class="token scalar string">
+            ${{ runner.os }}-node-</span>
+      <span class="token comment"># github-script action: https://github.com/actions/github-script</span>
+      <span class="token comment"># 在 workflow 中使用 Script 语法调用 Github API 或引用 workflow context</span>
+
+      <span class="token comment"># setup-node action: https://github.com/actions/setup-node</span>
+      <span class="token comment"># 配置 Node 执行环境（当前构建的服务器默认没有 Node 环境，可以通过 Action 安装 Node）</span>
+      <span class="token comment"># 需要注意安装 Node 的同时会捆绑安装 npm，如果想了解为什么会捆绑，可以 Google 一下有趣的故事哦</span>
+      <span class="token comment"># 因此使用了该 action 后就可以使用 npm 的脚本在服务器进行执行啦</span>
+      <span class="token comment"># 这里也可以尝试 v2-beta 版本哦</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Set Node
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> actions/setup<span class="token punctuation">-</span>node@v1
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token comment"># 也可以通过 strategy.matrix.node 进行灵活配置</span>
+          <span class="token comment"># 这里本地使用 node 的 12 版本构建，因此这里就进行版本固定啦</span>
+          <span class="token key atrule">node-version</span><span class="token punctuation">:</span> <span class="token string">'12'</span>
+
+      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm install
+      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run build
+      <span class="token punctuation">-</span> <span class="token key atrule">run</span><span class="token punctuation">:</span> npm run docs<span class="token punctuation">:</span>build
+
+      <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Deploy
+        <span class="token comment"># 用于发布静态站点资源</span>
+        <span class="token comment"># actions-gh-pages action: https://github.com/peaceiris/actions-gh-pages</span>
+        <span class="token key atrule">uses</span><span class="token punctuation">:</span> peaceiris/actions<span class="token punctuation">-</span>gh<span class="token punctuation">-</span>pages@v3
+        <span class="token key atrule">with</span><span class="token punctuation">:</span>
+          <span class="token comment"># GTIHUB_TOKEN：https://docs.github.com/en/actions/configuring-and-managing-workflows/authenticating-with-the-github_token</span>
+          <span class="token comment"># Github 会在 workflow 中自动生成 GIHUBT_TOKEN，用于认证 workflow 的运行</span>
+          <span class="token key atrule">github_token</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> secrets.GITHUB_TOKEN <span class="token punctuation">}</span><span class="token punctuation">}</span>
+          <span class="token comment"># 静态资源目录设置</span>
+          <span class="token key atrule">publish_dir</span><span class="token punctuation">:</span> ./docs/.vuepress/dist
+          <span class="token comment"># 默认发布到 gh-pages 分支上，可以指定特定的发布分支</span>
+          <span class="token key atrule">publish_branch</span><span class="token punctuation">:</span> gh<span class="token punctuation">-</span>pages1 <span class="token comment"># default: gh-pages</span>
+          <span class="token key atrule">full_commit_message</span><span class="token punctuation">:</span> $<span class="token punctuation">{</span><span class="token punctuation">{</span> github.event.head_commit.message <span class="token punctuation">}</span><span class="token punctuation">}</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># timeout-minutes: 一个 job 执行的最大时间，默认是 6h，如果超过时间则取消执行</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># strategy.matrix: 例如指定当前 job 的 node 版本列表、操作系统类型列表等</span>
+    <span class="token comment"># strategy.fail-fast</span>
+    <span class="token comment"># strategy.max-parallel</span>
+    <span class="token comment"># continue-on-error:  一旦当前 job 执行失败，那么 workflow 停止执行。设置为 true 可以跳过当前 job 执行</span>
+    <span class="token comment"># container: Docker 容器配置，包括 image、env、ports、volumes、options 等配置</span>
+    <span class="token comment">#</span>
+    <span class="token comment"># services: 使用 Docker 容器 Action 或者 服务 Action 必须使用 Linux 环境运行</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">4/1/2024, 4:22:43 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/service/git/git-cheat-sheet.html" class="prev">
+        Git 备忘清单
+      </a></span> <span class="next"><a href="/service/cloud/cloud.html">
+        云服务器自建部署流程
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ca138bf0.js" defer></script><script src="/assets/js/3.2dc10a6c.js" defer></script><script src="/assets/js/2.f56b7d3c.js" defer></script><script src="/assets/js/120.e3d56bdd.js" defer></script><script src="/assets/js/9.86c6a2be.js" defer></script>
+  </body>
+</html>
