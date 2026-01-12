@@ -189,7 +189,8 @@ module.exports = {
           collapsable: false,
           children: [
             ['', 'Vuepress静态博客搭建'],
-            ['navicat', 'Mac 安装 Navicat 数据库管理工具']
+            ['navicat', 'Mac 安装 Navicat 数据库管理工具'],
+            ['openApi2Ts', 'openApi2Ts']
           ]
         }
       ],
