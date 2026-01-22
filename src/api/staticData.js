@@ -130,5 +130,19 @@ export const tagSource = [
       label: '前端常识',
       path: 'front-end/common-sense'
     }
+  ],
+  [
+    {
+      label: 'comfyui',
+      path: 'ai/comfyui'
+    },
+    {
+      label: 'stable-diffusion',
+      path: 'ai/stable-diffusion'
+    },
+    {
+      label: 'AIchat',
+      path: 'ai/chatgpt'
+    }
   ]
 ];

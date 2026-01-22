@@ -31,7 +31,7 @@ module.exports = {
       { text: '前端相关', link: '/front-end/', icon: '<i class="el-icon-star-on"></i>' },
       { text: '后端服务', link: '/service/' },
       { text: '提效工具', link: '/tools/' },
-      { text: 'AIGC', link: '/ai/', icon: '<i class="el-icon-view"></i>' },
+      { text: 'AI+', link: '/ai/', icon: '<i class="el-icon-view"></i>' },
       {
         text: 'Contact',
         items: [
@@ -189,8 +189,8 @@ module.exports = {
           collapsable: false,
           children: [
             ['', 'Vuepress静态博客搭建'],
-            ['navicat', 'Mac 安装 Navicat 数据库管理工具'],
-            ['openApi2Ts', 'openApi2Ts']
+            ['navicat', 'Mac 安装 Navicat 数据库管理工具']
+            // ['openApi2Ts', 'openApi2Ts']
           ]
         }
       ],
@@ -201,22 +201,24 @@ module.exports = {
         //   children: [['common/Coze', 'Coze第一次尝试']]
         // },
         {
-          title: 'AI学习-抛砖引玉',
+          title: 'AI+学习',
           collapsable: false,
           children: [
-            ['chatgpt/chat', 'Prompt公式（翻译，育儿，表情包，构图）'],
-            ['chatgpt/kimi+', 'Kimi+值得推荐，Kimi 版 GPTs，提示词专家'],
+            ['chatgpt/kimi+', 'Kimi+使用指南'],
             ['stable-diffusion-webui/prompt', 'AI 绘画 prompt 提示词的进阶使用'],
             ['comfyui/start', 'ComfyUI 的默认工作流拆解学习'],
             ['comfyui/install', ' Mac (Intel 集成显卡)安装 ComfyUI'],
             ['stable-diffusion-webui/install', 'Mac本地部署stable-diffusion']
           ]
+        },
+        {
+          title: 'AI+前端',
+          collapsable: false,
+          children: [
+            ['content/aiReptiles', 'AI辅助网络爬虫实战'],
+            ['front-end/uiux', 'UI-UX-PRO-MAX']
+          ]
         }
-        // {
-        //   title: 'AI实战',
-        //   collapsable: false,
-        //   children: [['content/aiReptiles', '和chatgpt聊聊天就把网络爬虫做好了']]
-        // }
       ]
     }
   }

@@ -2,7 +2,7 @@
 customLabelArray: [1]
 ---
 
-# <Label :level='1'/> Kimi+值得推荐，Kimi 版 GPTs，提示词专家（AI 教你玩 AI，简直就是喂到嘴里了）
+# <Label :level='1'/> Kimi+提示词专家
 
 ## Kimi+是什么？
 
